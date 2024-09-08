@@ -1,0 +1,47 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-image: url('./dep13.PNG');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.auth-button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.auth-button:hover {
+  background-color: #21a1f1;
+}
+
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
