@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/okay_site/static/css/main.a12176aa.css",
-    "main.js": "/okay_site/static/js/main.8386d7f5.js",
+    "main.css": "/okay_site/static/css/main.8508abd6.css",
+    "main.js": "/okay_site/static/js/main.6d9409f8.js",
     "static/js/453.a24762e5.chunk.js": "/okay_site/static/js/453.a24762e5.chunk.js",
-    "static/media/dep13.PNG": "/okay_site/static/media/dep13.27aeac12a3729a4dc85d.PNG",
     "index.html": "/okay_site/index.html",
-    "main.a12176aa.css.map": "/okay_site/static/css/main.a12176aa.css.map",
-    "main.8386d7f5.js.map": "/okay_site/static/js/main.8386d7f5.js.map",
+    "main.8508abd6.css.map": "/okay_site/static/css/main.8508abd6.css.map",
+    "main.6d9409f8.js.map": "/okay_site/static/js/main.6d9409f8.js.map",
     "453.a24762e5.chunk.js.map": "/okay_site/static/js/453.a24762e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a12176aa.css",
-    "static/js/main.8386d7f5.js"
+    "static/css/main.8508abd6.css",
+    "static/js/main.6d9409f8.js"
   ]
 }
