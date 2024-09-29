@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
 import './App.css';
 import Signup from './signup';
 import Signin from './signin';
@@ -20,22 +20,30 @@ function App() {
             </nav>
           </div>
         </header>
+
         {/* Main content should be outside the header */}
         <div className="main-content">
           <Routes>
-            <Route path="/" element={
-              <div className="content">
-                <h2>Find Support and Connection</h2>
-                <p>
-                  We understand that life can be tough. Here at It's Okay App, you'll find a community of people who care and are ready to listen.
-                </p>
-              </div>
-            } />
+            {/* Route for Home */}
+            <Route 
+              path="/" 
+              element={
+                <div className="content">
+                  <h2>Find Support and Connection</h2>
+                  <p>
+                    We understand that life can be tough. Here at It's Okay App, you'll find a community of people who care and are ready to listen.
+                  </p>
+                </div>
+              } 
+            />
             <Route path="/signup" element={<Signup />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/read" element={<Read />} />
+            {/* If no path matches, redirect to the home route */}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
+        
         <footer className="App-footer">
           &copy; 2024 It's Okay App
         </footer>
