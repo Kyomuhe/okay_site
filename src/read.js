@@ -1,6 +1,6 @@
-import React from'react';
+import React from 'react';
 
-const read=()=>{
+const Read=()=>{
     return(
         <div>
             <center>
@@ -12,4 +12,4 @@ const read=()=>{
     );
 };
 
-export default read;
+export default Read;
