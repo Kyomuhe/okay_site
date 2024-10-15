@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <div className="top-menu">
-            <h1 className="app-name">It's Okay App</h1>
+            <h1 className="app-name">Yore App</h1>
             <nav>
               <Link to="/">Home</Link>
               <Link to="/signup">Sign Up</Link>
@@ -31,7 +31,7 @@ function App() {
                 <div className="content">
                   <h2>Find Support and Connection</h2>
                   <p>
-                    We understand that life can be tough. Here at It's Okay App, you'll find a community of people who care and are ready to listen.
+                    We understand that life can be tough. Here at yore App, you'll find a community of people who care and are ready to listen.
                   </p>
                 </div>
               } 
@@ -45,7 +45,7 @@ function App() {
         </div>
         
         <footer className="App-footer">
-          &copy; 2024 It's Okay App
+          &copy; 2024 Yore App
         </footer>
       </div>
     </BrowserRouter>
