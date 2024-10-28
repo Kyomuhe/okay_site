@@ -21,7 +21,7 @@ function App() {
           </div>
         </header>
 
-        {/* Main content should be outside the header */}
+        {}
         <div className="main-content">
           <Routes>
             {/* Route for Home */}
@@ -39,7 +39,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/read" element={<Read />} />
-            {/* If no path matches, redirect to the home route */}
+            {/* If no path matches, it redirects to the home route */}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
