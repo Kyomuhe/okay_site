@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import "./App.css";
-import Signup from "./signup";
-import Signin from "./signin";
-import Read from "./read";
+import Signup from "./components/signup";
+import Signin from "./components/signin";
+import Read from "./components/read";
 
 function App() {
 	return (
