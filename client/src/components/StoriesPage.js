@@ -1,10 +1,19 @@
-import React from "react";
-import { useNavigate } from "react-router-dom"; 
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import profile from "../profile.PNG";
-import { AiOutlineHome, AiOutlineMessage, AiOutlineBell, AiOutlineSearch } from "react-icons/ai"; // Using react-icons
+import {
+    AiOutlineHome,
+    AiOutlineMessage,
+    AiOutlineBell,
+    AiOutlineSearch,
+    AiOutlinePlus,
+} from "react-icons/ai"; // Using react-icons
 
 const StoriesPage = () => {
     const navigate = useNavigate();
+    const [showMenu, setShowMenu] = useState(false); 
+
+    const handleMenuToggle = () => setShowMenu(!showMenu); // Toggle menu visibility
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-100">
@@ -14,17 +23,14 @@ const StoriesPage = () => {
                     src={profile}
                     alt="Profile"
                     className="w-10 h-10 rounded-full cursor-pointer"
-                    onClick={() => navigate("/UserProfile")} // Navigate to the User Profile page
+                    onClick={() => navigate("/UserProfile")} // NavigateS to the User Profile page
                 />
                 <h1 className="text-xl font-semibold text-gray-800">Stories</h1>
-                <div className="w-10 h-10" /> {/* Empty space for alignment */}
+                <div className="w-10 h-10" /> {}
             </div>
 
             {/* Stories Content */}
             <div className="flex-1 p-4">
-                <h2 className="text-gray-700 text-lg font-semibold mb-4">
-                    Stories Posted by People
-                </h2>
                 <div className="space-y-4">
                     {/* Placeholder for stories */}
                     <div className="bg-white p-4 rounded-lg shadow">
@@ -40,6 +46,38 @@ const StoriesPage = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            {/* Floating Button */}
+            <div className="fixed bottom-16 right-6">
+                {/* Main FAB */}
+                <button
+                    onClick={handleMenuToggle}
+                    className="w-14 h-14 rounded-full bg-purple-500 text-white shadow-lg flex items-center justify-center hover:bg-purple-600 transition ease-in-out"
+                >
+                    <AiOutlinePlus className="text-3xl" />
+                </button>
+
+                {/* Options Menu */}
+                {showMenu && (
+                    <div className="absolute bottom-16 right-0 flex flex-col space-y-2 bg-white p-3 rounded-lg shadow-md">
+                        <button
+                            className="px-4 py-2 text-gray-700 text-purple-500 hover:text-blue-500 hover:bg-gray-100 rounded-lg text-sm"
+                        >
+                            Post a Story
+                        </button>
+                        <button
+                            className="px-4 py-2 text-gray-700 text-purple-500 hover:text-blue-500 hover:bg-gray-100 rounded-lg text-sm"
+                        >
+                            Create Group
+                        </button>
+                        <button
+                            className="px-4 py-2 text-gray-700 text-purple-500 hover:text-blue-500 hover:bg-gray-100 rounded-lg text-sm"
+                        >
+                            Start a Conversation
+                        </button>
+                    </div>
+                )}
             </div>
 
             {/* Bottom Navigation */}
