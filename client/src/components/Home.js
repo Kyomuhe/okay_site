@@ -1,7 +1,7 @@
 // Home.js
 import React from "react";
 import { Link } from "react-router-dom";
-import dep1 from "../dep1.PNG"; // Import the image file
+import dep1 from "../dep1.PNG"; 
 
 const Home = () => {
   return (
@@ -9,8 +9,8 @@ const Home = () => {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="flex justify-between items-center px-6 py-4 border-b border-gray-300">
-          <h1 className="text-2xl font-bold text-gray-700">It's Okay App</h1>
-          <nav className="flex gap-4">
+          <h1 className="text-3xl font-serif text-gray-800">It's Okay <span className="text-gray-500">App</span></h1>
+        <nav className="flex gap-4">
             <Link
               to="/signup"
               className="text-gray-700 hover:text-mint-500 px-3 py-2 rounded transition"
@@ -42,6 +42,9 @@ const Home = () => {
           <h2 className="text-4xl font-semibold text-gray-800 mb-6">
             Find Support and Connection
           </h2>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          Your Companion for Life's Ups and Downs          </p>
+
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             We understand that life can be tough. Here at *It's Okay App*, you'll find a community of people who care and are ready to listen.
           </p>

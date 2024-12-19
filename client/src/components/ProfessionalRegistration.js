@@ -8,6 +8,7 @@ const ProfessionalRegistration = () => {
     willingToHelp: '',
     profilePic: null,
     about: '',
+    password: ''
   });
 
   const handleChange = (e) => {
@@ -67,6 +68,20 @@ const ProfessionalRegistration = () => {
               id="profession"
               name="profession"
               value={formData.profession}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="password" className="block text-gray-700 font-medium mb-2">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
               onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"

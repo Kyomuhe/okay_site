@@ -9,6 +9,8 @@ import ProfessionalRegistration from "./components/ProfessionalRegistration";
 import NormalAccountForm from "./components/NormalAccountForm";
 import AnonymousHelpForm from "./components/AnonymousHelpForm";
 import FullDetailsForm from "./components/FullDetailsForm";
+import UserProfile from "./components/UserProfile";
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
                         <Route path="/NormalAccountForm" element={<NormalAccountForm />} />
                         <Route path="/AnonymousHelpForm" element={<AnonymousHelpForm/>}/>
                         <Route path="/FullDetailsForm" element={<FullDetailsForm/>}/>
+                        <Route path="/UserProfile" element={<UserProfile/>}/>
+
 
 
 
