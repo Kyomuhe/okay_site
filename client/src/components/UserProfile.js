@@ -35,7 +35,7 @@ const UserProfile = () => {
                                     className={`py-2 px-6 ${friendsTab === 'friends' ? 'border-b-4 border-blue-500 text-blue-500 font-semibold' : 'text-gray-600 hover:text-blue-500'}`}
                                     onClick={() => setFriendsTab('friends')}
                                 >
-                                    Other Friends
+                                    Other Companions
                                 </button>
                             </div>
                 
@@ -47,7 +47,7 @@ const UserProfile = () => {
                                     </div>
                                 ) : (
                                     <div>
-                                        <p>Your friends will apear here</p>
+                                        <p>Your other Companions will apear here</p>
 
                                     </div>
                                 )}
@@ -148,7 +148,7 @@ const UserProfile = () => {
                     className={`py-2 px-4 ${activeTab === 'friends' ? 'border-b-2 border-blue-500 font-semibold' : 'text-gray-600'}`}
                     onClick={() => setActiveTab('friends')}
                 >
-                    Friends
+                    Companions
                 </button>
                 <button
                     className={`py-2 px-4 ${activeTab === 'groups' ? 'border-b-2 border-blue-500 font-semibold' : 'text-gray-600'}`}
