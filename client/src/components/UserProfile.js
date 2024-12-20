@@ -35,7 +35,7 @@ const UserProfile = () => {
                                     className={`py-2 px-6 ${friendsTab === 'friends' ? 'border-b-4 border-blue-500 text-blue-500 font-semibold' : 'text-gray-600 hover:text-blue-500'}`}
                                     onClick={() => setFriendsTab('friends')}
                                 >
-                                    Friends
+                                    Other Companions
                                 </button>
                             </div>
                 
@@ -43,21 +43,12 @@ const UserProfile = () => {
                             <div className="mt-4">
                                 {friendsTab === 'therapists' ? (
                                     <div>
-                                        <h3 className="text-xl font-semibold">Therapists</h3>
-                                        <ul className="list-disc list-inside mt-2">
-                                            <li>Therapist 1</li>
-                                            <li>Therapist 2</li>
-                                            <li>Therapist 3</li>
-                                        </ul>
+                                        <p>Your Therapist friends will apear here</p>
                                     </div>
                                 ) : (
                                     <div>
-                                        <h3 className="text-xl font-semibold">Friends</h3>
-                                        <ul className="list-disc list-inside mt-2">
-                                            <li>Friend 1</li>
-                                            <li>Friend 2</li>
-                                            <li>Friend 3</li>
-                                        </ul>
+                                        <p>Your other Companions will apear here</p>
+
                                     </div>
                                 )}
                             </div>
@@ -97,23 +88,53 @@ const UserProfile = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white">
-            <div className="text-center mb-6">
+    <div className="max-h-screen bg-white">
+        <div className="max-h-screen bg-white flex flex-col items-center">
+    {/* Profile Section */}
+        <div className="relative flex flex-col items-center w-full max-w-screen-lg px-6 mt-6">
+        {/* Profile Image */}
+        <div className="flex flex-col items-center mx-auto">
             <img
-            src={profile}
-            alt="Profile"
-            className="w-24 h-24 rounded-full mx-auto bg-gray-300"
-        />
+                src={profile}
+                alt="Profile"
+                className="w-24 h-24 rounded-full bg-gray-300"
+            />
+        </div>
+
+        {/* Edit Profile Button */}
+        <button
+            className="absolute right-0 py-1 px-4 border border-gray-300 text-black rounded-lg bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 transition ease-in-out duration-300"
+        >
+            Edit Profile
+        </button>
+    </div>
+
+    <div className="text-center mt-4">
+        {/* Full Name */}
+        <h1 className="text-2xl font-bold mt-4 text-gray-800">
+            Full Name
+        </h1>
+
         
         {/* Placeholder for username */}
-        <h2 className="text-xl font-semibold mt-2 text-gray-400 animate-pulse">
-            Username
+        <h2 className="text-xl font-semibold mt-2 text-gray-600">
+            @Username
         </h2>
+
+        {/* Profession or Problem */}
+        <p className="text-gray-500 mt-2">
+            Profession or problem
+        {/* Check user type */}
+        </p>
+
 
         {/* Placeholder for bio */}
         <p className="text-gray-600">
             This is a short bio about the user.
         </p>
+
+
+        </div>
         </div>
 
             <nav className="flex justify-around border-b mb-6">
@@ -127,7 +148,7 @@ const UserProfile = () => {
                     className={`py-2 px-4 ${activeTab === 'friends' ? 'border-b-2 border-blue-500 font-semibold' : 'text-gray-600'}`}
                     onClick={() => setActiveTab('friends')}
                 >
-                    Friends
+                    Companions
                 </button>
                 <button
                     className={`py-2 px-4 ${activeTab === 'groups' ? 'border-b-2 border-blue-500 font-semibold' : 'text-gray-600'}`}
