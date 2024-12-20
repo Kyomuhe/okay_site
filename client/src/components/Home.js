@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import dep1 from "./images/dep1.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrain, faSmile, faHeartbeat, faBalanceScale, faShieldAlt, faSadCry } from "@fortawesome/free-solid-svg-icons";
-import dep18 from"./images/dep18.PNG";
+import dep18 from"./images/dep.PNG";
 
 
 
@@ -110,11 +110,16 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="flex flex-col items-center justify-center my-8">
-        <img
-        src={dep18}
-        alt="Description of dep18"
-        className="max-w-full h-auto shadow-lg rounded-lg mb-8"/>
+      <div className="flex flex-col items-center justify-center my-8 bg-white">
+  <img
+    src={dep18}
+    alt="Description of dep18"
+    className="max-w-full h-auto mb-8"
+    style={{
+      maskImage: "radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%)",
+      WebkitMaskImage: "radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%)"
+    }}
+  />
 </div>
 
 
